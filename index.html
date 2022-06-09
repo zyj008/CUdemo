@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+
+<article>
+  <header>
+	<h1>Prosody Modelling with Pre-trained Cross-utterance Representations for Improved Speech Synthesis</h1>
+  </header>
+</article>
+
+<p><b>Authors:</b> Ya-Jie Zhang, Chao Zhang, <i>Member IEEE<\i>, Wei Song, Zhengchen Zhang, Xiaodong He, <i>Fellow IEEE<\i> </p>
+
+<div><b>Abstract:</b> When humans speak multiple utterances in a continuous manner, the prosodic features generated in each utterance are related to those in its neighbouring utterances. Such cross-utterance (CU) dependencies are often ignored by the current neural text-to-speech (TTS) systems, which reduces the naturalness and expressiveness of the synthesized speeches. In this paper, we propose to improve the prosody modelling ability of neural TTS systems using pre-trained CU acoustic and text representations. Such CU acoustic representations are derived using the Wav2Vec 2.0 model (W2V2) from the synthesized audios of the past utterances, while the CU text representations are extracted using the Bidirectional Encoder Representation from Transformers (BERT) model from the scripts of the future utterances. Experimental results on a Mandarin audiobook and an English audiobook showed the naturalness and expressiveness of the synthesized audios were significantly improved by incorporating such pre-trained W2V2 and BERT CU representations into the Fastspeech2 TTS framework.
+</div>
+
+<head>
+<meta charset="UTF-8">
+<title>Speech Demo</title>
+</head>
+
+<body>
+  
+<h3>1. English demos</h3></a>
+   <p class="sample">
+    1." Didn't you know this was the twenty-eighth of August ? "
+    <blockquote>
+    <table>
+    <tr>
+    <td align=center width=300>Fastspeech2 model</td><td align=center width=300>Proposed model</td>    
+    </tr>
+    <tr>
+    <td rowspan=2><audio src="http://home.ustc.edu.cn/~zyj008/ICASSP2019/audio/style_transfer/parallel/ref/03.wav" controls=""></audio></td>
+    <td rowspan=2><audio src="http://home.ustc.edu.cn/~zyj008/ICASSP2019/audio/style_transfer/parallel/baseline/03.wav" controls=""></audio></td>
+    </tr>
+    </table>
+    </blockquote>
+	
+	
+  </p>   
+<h3>1. Mandarin demos</h3></a>
+   <p class="sample">
+   	<div>1. <i>reference text</i> : " I love you . Good-by - because I love you . "</div>
+   	<div > &ensp; <i>target text</i> : " She could not compose herself - Mr. Woodhouse would be alarmed - she had better go ; "</div>	
+    <blockquote>
+    <table>
+    <tr>
+    <td align=center width=300>Fastspeech2 model</td><td align=center width=300>Proposed model</td>    
+    </tr>
+    <tr>
+    <td rowspan=2><audio src="http://home.ustc.edu.cn/~zyj008/ICASSP2019/audio/style_transfer/non-parallel/baseline/19.wav" controls=""></audio></td>
+	<td rowspan=2><audio src="http://home.ustc.edu.cn/~zyj008/ICASSP2019/audio/style_transfer/non-parallel/vae/19.wav" controls=""></audio></td>
+    </tr>
+    </table>	
+    </blockquote>   
+
+
+	
+  </p>    
+  
+ </body>
+</html>
